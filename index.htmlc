@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>Saib Structures | Property Maintenance & Projects</title>
+
+  <meta name="description" content="Saib Structures provides property maintenance, painting, rental property preparation, container conversions and modular building improvements in Midrand, Centurion and surrounding areas.">
+
+  <meta name="theme-color" content="#111111">
+
+  <style>
+    :root {
+      --black: #111111;
+      --white: #ffffff;
+      --gold: #b99a5b;
+      --cream: #f7f5f0;
+      --grey: #666666;
+      --border: #e8e4db;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      scroll-padding-top: 90px;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      color: var(--black);
+      background: var(--white);
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    .container {
+      width: min(1120px, 90%);
+      margin: auto;
+    }
+
+    .topbar {
+      background: var(--black);
+      color: var(--white);
+      padding: 9px 0;
+      font-size: 13px;
+      text-align: center;
+      letter-spacing: 0.4px;
+    }
+
+    header {
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      background: var(--white);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .navbar {
+      min-height: 84px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 24px;
+    }
+
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      flex-shrink: 0;
+    }
+
+    .logo {
+      width: 54px;
+      height: 54px;
+      border: 1px solid var(--gold);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: var(--white);
+    }
+
+    .logo svg {
+      width: 37px;
+      height: 37px;
+    }
+
+    .brand-name {
+      font-size: 20px;
+      font-weight: 800;
+      letter-spacing: -0.6px;
+      line-height: 1.2;
+    }
+
+    .brand-name span {
+      display: block;
+      font-size: 10px;
+      letter-spacing: 3px;
+      color: var(--gold);
+      text-transform: uppercase;
+      margin-top: 4px;
+    }
+
+    nav {
+      display: flex;
+      align-items: center;
+      gap: 25px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    nav a:hover {
+      color: var(--gold);
+    }
+
+    .nav-contact {
+      background: var(--black);
+      color: var(--white);
+      padding: 11px 17px;
+      border-radius: 3px;
+    }
+
+    .nav-contact:hover {
+      background: var(--gold);
+      color: var(--black);
+    }
+
+    .hero {
+      background:
+        linear-gradient(90deg, rgba(17,17,17,0.96), rgba(17,17,17,0.78)),
+        var(--black);
+      color: var(--white);
+      padding: 105px 0 100px;
+    }
+
+    .eyebrow {
+      color: var(--gold);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+      font-weight: 800;
+      margin-bottom: 18px;
+    }
+
+    .hero h1 {
+      max-width: 760px;
+      font-size: clamp(38px, 6vw, 66px);
+      line-height: 1.1;
+      letter-spacing: -2px;
+      margin-bottom: 25px;
+    }
+
+    .hero h1 span {
+      color: var(--gold);
+    }
+
+    .hero p {
+      max-width: 650px;
+      color: #e3e3e3;
+      font-size: 17px;
+      margin-bottom: 32px;
+    }
+
+    .buttons {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 14px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 23px;
+      font-size: 13px;
+      font-weight: 800;
+      border: 1px solid var(--gold);
+      border-radius: 3px;
+      transition: 0.2s ease;
+    }
+
+    .button-gold {
+      background: var(--gold);
+      color: var(--black);
+    }
+
+    .button-gold:hover {
+      background: var(--white);
+      border-color: var(--white);
+    }
+
+    .button-outline {
+      color: var(--white);
+    }
+
+    .button-outline:hover {
+      background: var(--white);
+      color: var(--black);
+    }
+
+    .trust-strip {
+      background: var(--cream);
+      border-bottom: 1px solid var(--border);
+    }
+
+    .trust-items {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      text-align: center;
+    }
+
+    .trust-item {
+      padding: 24px 12px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .trust-item + .trust-item {
+      border-left: 1px solid var(--border);
+    }
+
+    section {
+      padding: 85px 0;
+    }
+
+    .section-heading {
+      max-width: 700px;
+      margin-bottom: 42px;
+    }
+
+    .section-heading h2 {
+      font-size: clamp(30px, 4vw, 43px);
+      line-height: 1.2;
+      letter-spacing: -1px;
+      margin-bottom: 15px;
+    }
+
+    .section-heading p {
+      color: var(--grey);
+      font-size: 16px;
+    }
+
+    .gold
