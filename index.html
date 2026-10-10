@@ -249,4 +249,773 @@
       font-size: 16px;
     }
 
-    .gold
+    .gold-line {
+      display: block;
+      width: 55px;
+      height: 3px;
+      background: var(--gold);
+      margin-bottom: 22px;
+    }
+
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 22px;
+    }
+
+    .service-card {
+      border: 1px solid var(--border);
+      padding: 30px 26px;
+      background: var(--white);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+
+    .service-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 30px rgba(0,0,0,0.06);
+    }
+
+    .service-number {
+      color: var(--gold);
+      font-size: 13px;
+      font-weight: 800;
+      letter-spacing: 2px;
+      margin-bottom: 18px;
+    }
+
+    .service-card h3 {
+      font-size: 21px;
+      line-height: 1.3;
+      margin-bottom: 14px;
+    }
+
+    .service-card p {
+      color: var(--grey);
+      font-size: 14px;
+      margin-bottom: 18px;
+    }
+
+    .service-card ul {
+      list-style: none;
+      color: var(--grey);
+      font-size: 14px;
+    }
+
+    .service-card li {
+      margin: 8px 0;
+      padding-left: 17px;
+      position: relative;
+    }
+
+    .service-card li::before {
+      content: "";
+      width: 6px;
+      height: 6px;
+      background: var(--gold);
+      position: absolute;
+      left: 0;
+      top: 10px;
+      border-radius: 50%;
+    }
+
+    .secondary-service {
+      margin-top: 24px;
+      padding: 25px 28px;
+      border-left: 3px solid var(--gold);
+      background: var(--cream);
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 24px;
+    }
+
+    .secondary-service h3 {
+      font-size: 19px;
+      margin-bottom: 5px;
+    }
+
+    .secondary-service p {
+      color: var(--grey);
+      font-size: 14px;
+    }
+
+    .text-link {
+      font-size: 13px;
+      font-weight: 800;
+      white-space: nowrap;
+      border-bottom: 1px solid var(--gold);
+      padding-bottom: 4px;
+    }
+
+    .about {
+      background: var(--cream);
+    }
+
+    .about-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      gap: 65px;
+      align-items: start;
+    }
+
+    .about-panel {
+      background: var(--black);
+      color: var(--white);
+      padding: 40px;
+      border-top: 4px solid var(--gold);
+    }
+
+    .about-panel .large-text {
+      font-size: 34px;
+      font-weight: 800;
+      line-height: 1.2;
+      margin-bottom: 15px;
+    }
+
+    .about-panel p {
+      color: #dedede;
+      font-size: 14px;
+    }
+
+    .about-copy h2 {
+      font-size: clamp(30px, 4vw, 42px);
+      line-height: 1.2;
+      letter-spacing: -1px;
+      margin-bottom: 22px;
+    }
+
+    .about-copy p {
+      color: var(--grey);
+      margin-bottom: 16px;
+    }
+
+    .about-copy strong {
+      color: var(--black);
+    }
+
+    .audience {
+      background: var(--white);
+    }
+
+    .audience-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 24px;
+    }
+
+    .audience-card {
+      padding: 30px;
+      border: 1px solid var(--border);
+    }
+
+    .audience-card h3 {
+      font-size: 21px;
+      margin-bottom: 10px;
+    }
+
+    .audience-card p {
+      color: var(--grey);
+      font-size: 14px;
+    }
+
+    .areas {
+      background: var(--cream);
+    }
+
+    .area-list {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 12px;
+      margin-top: 25px;
+    }
+
+    .area-list span {
+      background: var(--white);
+      border: 1px solid var(--border);
+      padding: 10px 17px;
+      font-size: 13px;
+      font-weight: 700;
+    }
+
+    .contact {
+      background: var(--black);
+      color: var(--white);
+    }
+
+    .contact-grid {
+      display: grid;
+      grid-template-columns: 1fr 0.8fr;
+      gap: 55px;
+      align-items: start;
+    }
+
+    .contact h2 {
+      font-size: clamp(32px, 4vw, 46px);
+      line-height: 1.2;
+      margin-bottom: 20px;
+    }
+
+    .contact p {
+      color: #dedede;
+      margin-bottom: 25px;
+    }
+
+    .contact-details {
+      border-top: 1px solid #444444;
+      padding-top: 25px;
+    }
+
+    .contact-details h3 {
+      color: var(--gold);
+      font-size: 15px;
+      margin-bottom: 12px;
+    }
+
+    .contact-details p {
+      margin-bottom: 10px;
+    }
+
+    .contact-details a {
+      color: var(--white);
+    }
+
+    .contact-details a:hover {
+      color: var(--gold);
+    }
+
+    .contact-note {
+      font-size: 12px;
+      color: #bbbbbb !important;
+      margin-top: 18px;
+    }
+
+    footer {
+      background: #080808;
+      color: #bbbbbb;
+      padding: 24px 0;
+      font-size: 12px;
+    }
+
+    .footer-inner {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      gap: 12px;
+    }
+
+    .footer-brand {
+      color: var(--white);
+      font-weight: 800;
+    }
+
+    .whatsapp-float {
+      position: fixed;
+      right: 20px;
+      bottom: 20px;
+      z-index: 200;
+      background: var(--gold);
+      color: var(--black);
+      padding: 14px 18px;
+      border-radius: 4px;
+      font-size: 13px;
+      font-weight: 800;
+      box-shadow: 0 5px 20px rgba(0,0,0,0.18);
+    }
+
+    .whatsapp-float:hover {
+      background: var(--white);
+    }
+
+    @media (max-width: 850px) {
+      .navbar {
+        padding: 15px 0;
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 16px;
+      }
+
+      nav {
+        width: 100%;
+        gap: 16px;
+        flex-wrap: wrap;
+      }
+
+      .services-grid {
+        grid-template-columns: repeat(2, 1fr);
+      }
+
+      .about-grid,
+      .contact-grid {
+        grid-template-columns: 1fr;
+        gap: 35px;
+      }
+    }
+
+    @media (max-width: 560px) {
+      .hero {
+        padding: 75px 0;
+      }
+
+      .hero h1 {
+        letter-spacing: -1px;
+      }
+
+      .trust-items {
+        grid-template-columns: 1fr;
+      }
+
+      .trust-item + .trust-item {
+        border-left: none;
+        border-top: 1px solid var(--border);
+      }
+
+      section {
+        padding: 65px 0;
+      }
+
+      .services-grid,
+      .audience-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .secondary-service {
+        align-items: flex-start;
+        flex-direction: column;
+      }
+
+      .about-panel {
+        padding: 28px;
+      }
+
+      nav {
+        gap: 12px 18px;
+        font-size: 12px;
+      }
+
+      .nav-contact {
+        padding: 8px 12px;
+      }
+
+      .whatsapp-float {
+        right: 12px;
+        bottom: 12px;
+      }
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="topbar">
+    PROPERTY MAINTENANCE · IMPROVEMENTS · SPECIALIST PROJECTS
+  </div>
+
+  <header>
+    <div class="container navbar">
+
+      <a class="brand" href="#home" aria-label="Saib Structures home">
+        <div class="logo">
+          <svg viewBox="0 0 100 100" aria-hidden="true">
+            <circle cx="50" cy="50" r="43"
+              fill="none" stroke="#111111" stroke-width="2.5"/>
+            <path
+              d="M50 14
+                 C56 34 66 44 86 50
+                 C66 56 56 66 50 86
+                 C44 66 34 56 14 50
+                 C34 44 44 34 50 14Z"
+              fill="#111111"/>
+          </svg>
+        </div>
+
+        <div class="brand-name">
+          Saib Structures
+          <span>Property Solutions</span>
+        </div>
+      </a>
+
+      <nav aria-label="Main navigation">
+        <a href="#home">Home</a>
+        <a href="#services">Services</a>
+        <a href="#about">About Us</a>
+        <a href="#areas">Areas</a>
+        <a class="nav-contact" href="#contact">Contact Us</a>
+      </nav>
+
+    </div>
+  </header>
+
+  <main>
+
+    <section class="hero" id="home">
+      <div class="container">
+
+        <div class="eyebrow">A Saib Group Division</div>
+
+        <h1>
+          Property Maintenance.<br>
+          <span>Projects Done Properly.</span>
+        </h1>
+
+        <p>
+          Practical property maintenance, painting and improvement
+          projects for property managers, landlords, businesses
+          and homeowners.
+        </p>
+
+        <div class="buttons">
+          <a class="button button-gold" href="#contact">
+            Discuss Your Project
+          </a>
+
+          <a class="button button-outline"
+             href="https://wa.me/27643841716"
+             target="_blank"
+             rel="noopener">
+            WhatsApp Us
+          </a>
+        </div>
+
+      </div>
+    </section>
+
+    <div class="trust-strip">
+      <div class="container trust-items">
+
+        <div class="trust-item">
+          Property Maintenance & Improvements
+        </div>
+
+        <div class="trust-item">
+          Residential & Commercial Projects
+        </div>
+
+        <div class="trust-item">
+          Midrand, Centurion & Surrounding Areas
+        </div>
+
+      </div>
+    </div>
+
+    <section id="services">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="gold-line"></span>
+
+          <div class="eyebrow">What We Do</div>
+
+          <h2>Practical Solutions for Your Property</h2>
+
+          <p>
+            From ongoing maintenance needs to planned improvements,
+            we help clients tackle property work with a practical,
+            organised approach.
+          </p>
+        </div>
+
+        <div class="services-grid">
+
+          <article class="service-card">
+            <div class="service-number">01 / MAINTENANCE</div>
+
+            <h3>Property Maintenance Projects</h3>
+
+            <p>
+              Help with maintenance backlogs, grouped repairs and
+              improvement work that needs time, planning and attention.
+            </p>
+
+            <ul>
+              <li>Property maintenance and repairs</li>
+              <li>Landlord maintenance requirements</li>
+              <li>Grouped repair jobs and project work</li>
+              <li>Property upkeep and improvements</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number">02 / PREPARATION</div>
+
+            <h3>Painting & Property Preparation</h3>
+
+            <p>
+              Practical improvements to help properties look
+              presentable, functional and ready for their next occupants.
+            </p>
+
+            <ul>
+              <li>Interior and exterior painting</li>
+              <li>Rental property turnovers</li>
+              <li>Pre-occupation maintenance</li>
+              <li>Property touch-ups and improvements</li>
+            </ul>
+          </article>
+
+          <article class="service-card">
+            <div class="service-number">03 / SPECIALIST PROJECTS</div>
+
+            <h3>Containers & Modular Buildings</h3>
+
+            <p>
+              Improvements and project support for container-based
+              spaces, mobile homes and park homes.
+            </p>
+
+            <ul>
+              <li>Container conversions and improvements</li>
+              <li>Container maintenance and repairs</li>
+              <li>Mobile and park home improvements</li>
+              <li>Modular building project support</li>
+            </ul>
+          </article>
+
+        </div>
+
+        <div class="secondary-service">
+
+          <div>
+            <h3>General Handyman Services</h3>
+
+            <p>
+              Smaller repairs, installations and everyday property
+              maintenance tasks for homes and businesses.
+            </p>
+          </div>
+
+          <a class="text-link" href="#contact">
+            Tell Us What You Need →
+          </a>
+
+        </div>
+
+      </div>
+    </section>
+
+    <section class="about" id="about">
+      <div class="container about-grid">
+
+        <div class="about-panel">
+          <div class="eyebrow">Experience & Practical Know-How</div>
+
+          <div class="large-text">
+            Experience That Builds Confidence.
+          </div>
+
+          <p>
+            Practical solutions, clear communication and a focus
+            on the requirements of each project.
+          </p>
+        </div>
+
+        <div class="about-copy">
+
+          <div class="eyebrow">About Saib Structures</div>
+
+          <h2>Property Solutions Built Around Your Needs</h2>
+
+          <p>
+            Saib Structures brings together practical experience in
+            property maintenance, container projects and modular
+            buildings.
+          </p>
+
+          <p>
+            We bring <strong>over 20 years of experience in container
+            and modular buildings, alongside maintenance work</strong>,
+            with an understanding of the practical considerations
+            involved in improving and maintaining properties.
+          </p>
+
+          <p>
+            We work with property owners, landlords, property managers,
+            businesses and homeowners on agreed maintenance and
+            improvement projects.
+          </p>
+
+          <p>
+            Our approach is straightforward: understand your
+            requirements, agree on the scope of work and focus on
+            delivering a professional result. Where a project requires
+            specialist skills beyond our scope, suitable specialist
+            support can be considered.
+          </p>
+
+          <a class="button button-gold" href="#contact">
+            Let's Discuss Your Project
+          </a>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="audience">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="gold-line"></span>
+
+          <div class="eyebrow">Who We Work With</div>
+
+          <h2>Support for Property Owners and Professionals</h2>
+
+          <p>
+            Whether you manage multiple properties or need work
+            completed at your home, let's discuss your requirements.
+          </p>
+        </div>
+
+        <div class="audience-grid">
+
+          <article class="audience-card">
+            <h3>Property Managers & Businesses</h3>
+
+            <p>
+              Maintenance backlogs, painting projects, grouped repairs,
+              rental preparation and defined improvement projects for
+              managed properties and business premises.
+            </p>
+          </article>
+
+          <article class="audience-card">
+            <h3>Homeowners & Private Landlords</h3>
+
+            <p>
+              Property repairs, painting, maintenance and practical
+              improvements to help keep your property functional,
+              presentable and well maintained.
+            </p>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="areas" id="areas">
+      <div class="container">
+
+        <div class="section-heading">
+          <span class="gold-line"></span>
+
+          <div class="eyebrow">Where We Work</div>
+
+          <h2>Serving Midrand and Surrounding Areas</h2>
+
+          <p>
+            We focus on the following areas in Gauteng. Contact us
+            to discuss your location and project requirements.
+          </p>
+
+          <div class="area-list">
+            <span>Midrand</span>
+            <span>Centurion</span>
+            <span>Faerie Glen</span>
+            <span>Sandton</span>
+            <span>Sunninghill</span>
+            <span>Fourways</span>
+            <span>Douglasdale</span>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <section class="contact" id="contact">
+      <div class="container contact-grid">
+
+        <div>
+          <div class="eyebrow">Get in Touch</div>
+
+          <h2>Have a Property Project in Mind?</h2>
+
+          <p>
+            Tell us what needs to be done, where the property is
+            located and what you would like to achieve. We can
+            discuss the scope of work and the next steps.
+          </p>
+
+          <div class="buttons">
+
+            <a class="button button-gold"
+               href="https://wa.me/27643841716?text=Hello%20Saib%20Structures%2C%20I%20would%20like%20to%20discuss%20a%20property%20project."
+               target="_blank"
+               rel="noopener">
+              Start a WhatsApp Chat
+            </a>
+
+            <a class="button button-outline"
+               href="tel:+27643841716">
+              Call Us
+            </a>
+
+          </div>
+        </div>
+
+        <div class="contact-details">
+          <h3>SAIB STRUCTURES</h3>
+
+          <p>
+            Property maintenance, painting and specialist
+            property improvement projects.
+          </p>
+
+          <p>
+            <strong>Phone:</strong><br>
+            <a href="tel:+27643841716">064 384 1716</a>
+          </p>
+
+          <p>
+            <strong>WhatsApp:</strong><br>
+            <a href="https://wa.me/27643841716"
+               target="_blank"
+               rel="noopener">
+              Message us on WhatsApp
+            </a>
+          </p>
+
+          <p>
+            <strong>Service area:</strong><br>
+            Midrand, Centurion and surrounding Gauteng areas.
+          </p>
+
+          <p class="contact-note">
+            Please contact us to discuss availability, project scope
+            and whether your requirements fall within our services.
+          </p>
+        </div>
+
+      </div>
+    </section>
+
+  </main>
+
+  <footer>
+    <div class="container footer-inner">
+
+      <div>
+        <span class="footer-brand">SAIB STRUCTURES</span>
+        <span> &nbsp;|&nbsp; A Saib Group Division</span>
+      </div>
+
+      <div>
+        © <span id="year"></span> Saib Structures. All rights reserved.
+      </div>
+
+    </div>
+  </footer>
+
+  <a class="whatsapp-float"
+     href="https://wa.me/27643841716"
+     target="_blank"
+     rel="noopener"
+     aria-label="Contact Saib Structures on WhatsApp">
+    WhatsApp Us
+  </a>
+
+  <script>
+    document.getElementById("year").textContent =
+      new Date().getFullYear();
+  </script>
+
+</body>
+</html>
